@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"),
+  url("/images/mask.jpg");
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home .content{
+  padding: 50px;
+ 
+
+}
+
+.home .content h2{
+  font-size: 4em;
+  line-height: 1em;
+  /* color: rgb(31, 101, 231); */
+  color: rgb(132, 15, 209);
+  margin-bottom: 6px;
+}
+
+.home .content p{
+  width: 50%;
+  font-weight: 400;
+}
+
+header{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo{
+   position: reative;
+   /* color:rgb(31, 101, 231); */
+   color: rgb(132, 15, 209);
+    /* color:#015b75 ; */
+   text-decoration: none;
+   font-size:30px;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+header .toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("/images/menu.png");
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+header .toggle.active{
+
+  background: url("/images/close.png");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+}
+
+.navigation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.navigation.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.navigation ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation ul li{
+  list-style: none;
+
+}
+
+.navigation ul li a{
+  display:inline-block;
+  color: blue;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 300;
+
+}
+
+.navigation ul li a:hover{
+  color: pink;
+}
+
+.sci{
+  position: absolute;
+  bottom:40px;
+  right:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a{
+  display: inline-block;
+  text-decoration: none;
+  transform:scale(0.6);
+}
+
+.about, 
+.Article, 
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin:120px auto;
+  width:80%;
+}
+
+.about .page_header,
+.Article .Page_header,
+.contact .Page_Header{
+  font-size:3rem;
+  border-bottom: 3px solid #015b75;
+}
+
+/* own */
+.contact_box{
+  /* text-align:center;
+  margin-top:20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* own */
+.contact_box input,textarea,button{
+  margin:20px;
+  padding: 15px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: larger;
+}
+/*own*/
+.contact_box button{
+  background-color: #015b75;
+  color: white;
+  cursor: pointer;
+  font-size:x-large;
+}
+
+.team_member .title{
+  text-align:center;
+  margin-top:20px;
+}
+
+.team_member .title span{
+  font-size:2em;
+  border-bottom: 3px solid #015b75;
+}
+
+.team_member .body{
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-evenly;
+  margin-top:30px;
+  text-align:center;
+}
+.team_member .body .team{
+  width:200px;
+  border-radius:50%
+}
+
+.article-box{
+  border:1px solid grey;
+  margin-top:10px;
+}
+.article-box .article_date{
+  background: pink;
+  float:left;
+  padding: 20px;
+  font-size:40px;
+  text-align: center;
+}
+
+.article-box .article-title{
+  float: left;
+  padding: 20px;
+  font-size:20px;
+}
+
+.box{
+  display:flex;
+  flex-direction: column;
+}
+
+.article-title a{
+  color: #015b75;
+  text-decoration: none;
+}
+
+.back_btn{
+  padding:10px;
+  background:#015b75;
+  color:white;
+  width:150px;
+  text-decoration:none;
+  text-align:center;
+}
+
+.article{
+  margin:120px auto;
+  width:80%;
+}
+
+.article .page_header{
+  font-size:3rem;
+  border-bottom: 3px solid #015b75;
+}
+
+.comments::before{
+  
+
+}
